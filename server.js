@@ -80,52 +80,6 @@ const resourceSchema = new mongoose.Schema({
 });
 
 const Resource = mongoose.model("Resource", resourceSchema);
-//Resource is the model name and Resources is the collection
-
-
-//Default data into DB some Do's and Dont's guidelines while donating Medicines etc.
-const data1 = new Resource({
-  name: "Tisha Soumya",
-  address: "Jamshedpur",
-  state: "Jharkhand",
-  city: "Jamshedpur",
-  district: "East Singhbhum",
-  pincode: 831001,
-  email: "tishasoumya@gmail.com",
-  contact: 7970636852,
-  description: "What you can donate:Any type of tablets (including ayurvedic tablets)Unopened/Sealed bottles of syrup, creams, balms, or any type of liquid",
-  rating: 9,
-
-});
-
-const data2 = new Resource({
-  name: "Salokya Kumar",
-  address: "Jamshedpur",
-  state: "Jharkhand",
-  city: "Jamshedpur",
-  district: "East Singhbhum",
-  pincode: 833201,
-  email: "kumar.salokya007@gmail.com",
-  contact: 8051029779,
-  description: "What you can’t donate:1. Homeopathic medicine 2.Opened/Unsealed bottles of syrup, creams, balms, or any type of liquid (due to possible contamination)",
-  rating: 9,
-
-});
-const data3 = new Resource({
-  name: "Sayan Bhattacharyya",
-  address: "Kolkata",
-  state: "Kolkata",
-  city: "Kolkata",
-  district: "Kolkata",
-  pincode: 700012,
-  email: "sayan.bhatta2017@gmail.com",
-  contact: 7044509519,
-  description: "What you can’t donate: 3.Medicines requiring refrigeration 4. Expired medicines 5.Used syringes, cotton, etc.",
-  rating: 9,
-
-});
-
-const defaultItems = [data1, data2, data3];
 
 //Date
 var today = new Date();
@@ -210,15 +164,6 @@ app.get("/donate", function(req, res) {
 
 app.get("/resources", function(req, res) {
   Resource.find({}, function(err, foundItems) {
-    if (foundItems.length === 0) {
-      Resource.insertMany(defaultItems, function(err) {
-        if (err)
-          console.log(err);
-        else
-          console.log("Success");
-      });
-      res.redirect("/resources");
-    } else
       res.render("resources", {
         date: today,
         newItemsList: foundItems,

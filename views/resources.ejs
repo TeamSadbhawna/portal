@@ -9,6 +9,49 @@
       <div class="card">
         <h5 class="text-center mb-4"><u>Detail's of the Resource provider with the description of the Resources</u> </h5>
 
+        <div class="card">
+          <h4 align="center">** EXAMPLE **</h4>
+          <span style="align-self: flex-start;"><strong>Condition/Description of the Items:</strong></span>
+          <p class="align:left">
+            <strong>Provider: John Doe <br>
+            <strong>Date:02/06/2021<br>
+            <strong>Description: Medicines,Supplements etc<br>
+            <strong>Rating:&nbsp;&nbsp;</strong> 9
+          </p>
+
+          <!-- Button trigger modal -->
+          <div class="row justify-content-center">
+            <div class="form-group col-md-5"> <a class="btn btn-primary" data-toggle="modal" data-target="#modal-det-user-test">Contact-Details</a> </div>
+          </div>
+
+          <!-- Modal for the contact-details-->
+          <div class="modal fade " id="modal-det-user-test" tabindex="-1" role="dialog" aria-labelledby="detailsTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="deteModalLongTitle">Contact-Details</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <strong>State:</strong>&nbsp;&nbsp;Madhya Pradesh<br>
+                  <strong>City/Town:</strong>&nbsp;&nbsp;Indore<br>
+                  <strong>District:</strong>&nbsp;&nbsp;Indore<br>
+                  <strong>Pin-Code:</strong>&nbsp;&nbsp;451010<br>
+                  <strong>Email-Address:</strong>&nbsp;&nbsp;test@example.com<br>
+                  <strong>Contact-No:</strong>&nbsp;&nbsp;9999988888<br>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
 
         <% newItemsList.forEach(function(item){ %>
         <div class="card">
