@@ -19,30 +19,10 @@
             <strong>Description:</strong><%=item.description%><br>
             <strong>Rating:&nbsp;&nbsp;</strong><%=item.rating%>
           </p>
-          
+
           <!-- Button trigger modal -->
           <div class="row justify-content-center">
-            <div class="form-group col-md-5"> <a class="btn btn-primary" data-toggle="modal" data-target="#modal-pic-user-<%= item._id %>-<%= item.state %>">View Picture</a> </div>
             <div class="form-group col-md-5"> <a class="btn btn-primary" data-toggle="modal" data-target="#modal-det-user-<%= item._id %>">Contact-Details</a> </div>
-          </div>
-
-          <!-- Modal for the pic-->
-          <div class="modal fade " id="modal-pic-user-<%= item._id %>-<%=item.state %>" tabindex="-1" role="dialog" aria-labelledby="pictureTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="picModalLongTitle">Picture's of the resources provided</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
           </div>
 
           <!-- Modal for the contact-details-->

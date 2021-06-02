@@ -71,10 +71,6 @@ const resourceSchema = new mongoose.Schema({
     type: String,
     required: [true, "Description of the things are required"]
   },
-  pic: {
-    data: Buffer,
-    contentType: String
-  },
   rating: {
     type: Number,
     required: [true, "Please enter the rating "],
