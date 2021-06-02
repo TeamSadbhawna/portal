@@ -1,0 +1,128 @@
+<%- include('partials/header'); -%>
+<div class="container-fluid px-1 py-5 mx-auto">
+  <div class="row d-flex justify-content-center">
+    <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+      <h3 class="webportal"><img class="logo" src="assets/images/logo.png" alt="SadbhawnaLogo" width="50" height="60">Sadbhawna</h3>
+      <p class="blue-text">Action speaks louder than words</p>
+      <div class="card">
+        <h5 class="text-center mb-4"></h5>
+
+        <form class="form-card" action="/donate" method="post">
+          <div class="row justify-content-between text-left">
+            <div class="form-group col flex-column d-flex"> <label class="form-control-label px-3">Full Name<span class="text-danger"> *</span></label>
+              <input type="text" id="fullname" name="fullname" placeholder="Enter your Name" onblur="validate(1)">
+            </div>
+
+          </div>
+          <div class="row justify-content-between text-left">
+            <div class="form-group col flex-column d-flex"> <label class="form-control-label px-3">Home Address<span class="text-danger"> *</span></label>
+              <input type="text" id="address" name="address" placeholder="Enter your address" onblur="validate(2)">
+            </div>
+
+          </div>
+          <div class="row justify-content-between text-left">
+            <div class="form-group col flex-column d-flex"> <label class="form-control-label px-3">State<span class="text-danger"> *</span></label>
+
+              <select name="state" id="state" class="form-control" onblur="validate(3)">
+                <option value="Andhra Pradesh">Select your State</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                <option value="Daman and Diu">Daman and Diu</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Lakshadweep">Lakshadweep</option>
+                <option value="Puducherry">Puducherry</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="West Bengal">West Bengal</option>
+              </select>
+            </div>
+
+          </div>
+          <div class="row justify-content-between text-left">
+            <div class="form-group col flex-column d-flex"> <label class="form-control-label px-3">City/Town<span class="text-danger"> *</span></label>
+              <input type="text" id="city" name="city" placeholder="City you live in" onblur="validate(4)">
+            </div>
+
+          </div>
+          <div class="row justify-content-between text-left">
+            <div class="form-group col flex-column d-flex"> <label class="form-control-label px-3">District<span class="text-danger"> *</span></label>
+              <input type="text" id="district" name="district" placeholder="Enter District" onblur="validate(5)">
+            </div>
+
+          </div>
+          <div class="row justify-content-between text-left">
+            <div class="form-group col flex-column d-flex"> <label class="form-control-label px-3">Pin-code<span class="text-danger"> *</span></label>
+              <input type="text" id="pincode" name="pincode" placeholder="Enter Pin-code" onblur="validate(6)">
+            </div>
+
+          </div>
+
+          <div class="row justify-content-between text-left">
+            <div class="form-group col flex-column d-flex"> <label class="form-control-label px-3">Email<span class="text-danger"> *</span></label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" onblur="validate(7)">
+            </div>
+
+          </div>
+          <div class="row justify-content-between text-left">
+            <div class="form-group col flex-column d-flex"> <label class="form-control-label px-3">Contact-No<span class="text-danger"> *</span></label>
+              <input type="text" id="contact" name="contact" placeholder="Enter a valid Contact-No" onblur="validate(8)">
+            </div>
+
+          </div>
+          <div class="row justify-content-between text-left">
+            <div class="form-group col flex-column d-flex"> <label class="form-control-label px-3">Description <span class="text-danger"> *</span></label>
+              <textarea id="description" name="description" placeholder="Description of the medicines etc which you are going to donate. For exammple- name of medicine,expiry date,date of mfg,When,how and where to use. etc." onblur="validate(9)"
+                rows="4" cols="50"></textarea>
+            </div>
+
+          </div>
+          <div class="row justify-content-between text-left">
+            <div class="form-group col flex-column d-flex"> <label class="form-control-label px-3">Upload a picture of the things to donate<span class="text-danger"> </span></label>
+              <input type="file" id="pic" accept="image/*" multiple name="pic" placeholder="Upload the picture">
+            </div>
+
+          </div>
+          <div class="row justify-content-between text-left">
+            <div class="form-group col flex-column d-flex"> <label class="form-control-label px-3">Rating<span class="text-danger"> *</span></label>
+              <input type="number" id="rating" name="rating" placeholder="Rate from 1-10 on the condition of the things you are donating." min="1" max="10" step="1" onblur="validate(10)">
+            </div>
+
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="form-group col-md-3"> <input type="submit" class="btn btn-primary" value="Donate"></input> </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<%- include('partials/footer'); -%>

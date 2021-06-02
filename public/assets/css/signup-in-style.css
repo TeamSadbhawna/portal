@@ -1,0 +1,121 @@
+/*-------------------------------- NAV BAR -----------------------------*/
+
+.webportal
+{
+    font-family: 'Cinzel', serif;
+    font-size: 50px;
+}
+
+.alignHead{
+  font-family: 'Cinzel', serif;
+  font-size: 50px;
+  margin-bottom: 0px;
+  margin-left: 80%;
+}
+
+.blue-text {
+    color: #1c60f1;
+    font-size:19.6px ;
+    font-family: 'Dancing Script', cursive;
+}
+
+.alignText{
+    margin-left: 80%;
+}
+
+@media (max-width:550px) {
+  .alignHead{
+    margin-left: 15%;
+  }
+  .alignText{
+    margin-left: 15%;
+  }
+}
+
+.nav-item {
+  text-align: right;
+}
+
+.navbar-nav, .navbar-toggler,{
+  margin-right: 5%;
+}
+.but-nav{
+  margin-right: 20px;
+}
+
+@media (max-width :900px) {
+  .navbar-nav, .navbar-toggler, .but-nav {
+    margin-right: 2%
+  }
+}
+
+
+.card {
+    padding: 30px 40px;
+    margin-bottom: 60px;
+    border: none !important;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2)
+}
+
+
+.form-control-label {
+    padding-top: 7px;
+}
+
+input,
+textarea,
+button {
+    padding: 10px 15px;
+    border-radius: 5px !important;
+    margin: 5px 0px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    font-size: 18px !important;
+    font-weight: 300
+}
+
+input:focus,
+textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #00BCD4;
+    outline-width: 0;
+    font-weight: 400
+}
+
+.btn-block {
+    margin-top: 17px;
+    text-transform: uppercase;
+    font-size: 15px !important;
+    font-weight: 400;
+    height: 43px;
+    cursor: pointer;
+    align-self: center;
+
+}
+.btn
+{
+    margin-top: 7px;
+}
+.btn-block:hover {
+    color: #fff !important
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+.about1
+{
+    font-size: 25px;
+    font-family: 'Cinzel', serif;
+    padding: 40px;
+    color: #fff;
+}
+.about-text
+{
+    color: #fff;
+}
