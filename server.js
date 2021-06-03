@@ -27,8 +27,21 @@ app.set('view engine', 'ejs');
 
 //schema for useNewUrlParser
 const userSchema = new mongoose.Schema({
-  email: String,
-  password: String
+  name:
+  {
+    type:String,
+    required:[true,"Please enter your Name"]
+  },
+  email: {
+   type: String,
+   required: [true,"Please enter your mail-ID"]
+  },
+
+  password:
+  {
+           type:String,
+           required: [true,"Please enter a password"]
+  } 
 });
 
 const User = new mongoose.model("User", userSchema);
@@ -134,20 +147,28 @@ app.get("/signup", function(req, res) {
 });
 
 app.post("/signup", function(req, res) {
+  if(req.body.cnfpassword!="" && req.body.password!="" && req.body.fullname!="")
+  {
   bcrypt.hash(req.body.cnfpassword, saltRounds, function(err, hash) {
     const newUser = new User({
+      name:req.body.fullname,
       email: req.body.email,
       password: hash
     });
 
     newUser.save((err) => {
       if (err) {
-        console.log(err);
+        res.render("failure");
       } else {
         res.render("donateform");
       }
     });
   });
+}
+else
+{
+  res.render("failure");
+}
 })
 
 
@@ -167,7 +188,6 @@ app.get("/resources", function(req, res) {
       res.render("resources", {
         date: today,
         newItemsList: foundItems,
-        pic: foundItems.pic
       });
   });
 });
