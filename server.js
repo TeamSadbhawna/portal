@@ -41,7 +41,7 @@ const userSchema = new mongoose.Schema({
   {
            type:String,
            required: [true,"Please enter a password"]
-  } 
+  }
 });
 
 const User = new mongoose.model("User", userSchema);
