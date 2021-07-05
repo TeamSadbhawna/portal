@@ -9,7 +9,7 @@ mongoose.connect(process.env.MONGO_DB_URI, {
   useUnifiedTopology: true
 });
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT ||3000;
 
 //bcrypt package
 const bcrypt = require('bcrypt');
@@ -94,21 +94,6 @@ const resourceSchema = new mongoose.Schema({
 
 const Resource = mongoose.model("Resource", resourceSchema);
 
-//Date
-var today = new Date();
-var dd = today.getDate();
-
-var mm = today.getMonth() + 1;
-var yyyy = today.getFullYear();
-if (dd < 10) {
-  dd = '0' + dd;
-}
-
-if (mm < 10) {
-  mm = '0' + mm;
-}
-today = dd + '/' + mm + '/' + yyyy;
-//Date
 
 
 app.get("/", function(req, res) {
@@ -186,7 +171,6 @@ app.get("/donate", function(req, res) {
 app.get("/resources", function(req, res) {
   Resource.find({}, function(err, foundItems) {
       res.render("resources", {
-        date: today,
         newItemsList: foundItems,
       });
   });
