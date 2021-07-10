@@ -17,7 +17,7 @@
 
 .alignHead{
   font-family: 'Cinzel', serif;
-  font-size: 50px;
+  font-size: 40px;
   margin-bottom: 0px;
   margin-left: 80%;
 }
@@ -32,12 +32,21 @@
     margin-left: 80%;
 }
 
-@media (max-width:550px) {
+@media (max-width:1160px) {
   .alignHead{
-    margin-left: 15%;
+    margin-left: 25%;
   }
   .alignText{
-    margin-left: 15%;
+    margin-left: 25%;
+  }
+}
+
+@media (max-width:450px) {
+  .alignHead{
+    font-size: 35px !important;
+  }
+  .alignText{
+    font-size: 18px !important;
   }
 }
 
@@ -50,6 +59,9 @@
 }
 .but-nav{
   margin-right: 20px;
+}
+.collapseNav{
+  margin-right: 5%;
 }
 
 @media (max-width :900px) {
