@@ -49,6 +49,14 @@
     font-size: 18px !important;
   }
 }
+@media (max-width:380px) {
+  .alignHead{
+    font-size: 30px !important;
+  }
+  .alignText{
+    font-size: 15px !important;
+  }
+}
 
 .nav-item {
   text-align: right;
