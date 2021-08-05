@@ -1,7 +1,7 @@
 # Official Sadbhawna Website
 <center>
 <img src="./public/images/logo.png"></img>
-<h2>"Action speaks louder than words"</h2>
+<h2>Action speaks louder than words</h2>
 <h3> A portal where recovered COVID-19 patients can share their resources. </h3>
 </center>
 <p>
