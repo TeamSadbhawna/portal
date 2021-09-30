@@ -12,3 +12,5 @@ We make a heartful request for everyone to please come forward and contribute he
 ### Website - [Link](https://sadbhawna-portal.herokuapp.com/)
 
 #### Note - Please consult a doctor before using any shared resource(s). Team Sadbhawna won't take any responsibilty as the portal is open for all.
+
+Leave a star behind if this repo helped you in any way 😄
