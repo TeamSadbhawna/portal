@@ -38,7 +38,10 @@ html, body {
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  position: relative
+  position: relative;
+  
+    scroll-behavior: smooth;
+  
 }
 
 body.noscroll {
