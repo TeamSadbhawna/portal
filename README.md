@@ -1,7 +1,7 @@
 # Sadbhawna Website's Repository
 
 <img src="./public/images/logo.png"></img>
-## Action speaks louder than words - [Website](sadbhawna-portal.herokuapp.com)
+## Action speaks louder than words - [Website](https://sadbhawna-portal.herokuapp.com/)
 ### A portal where recovered COVID-19 patients can share their resources.
 
 <p>
