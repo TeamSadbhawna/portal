@@ -2792,6 +2792,12 @@ input~.error:after, textarea~.error:after, select~.error:after {
   padding: 5% 10%;
   background-color: #f7f9fe !important
 }
+
+.vision-row {
+  justify-content: center;
+  gap: 2%;
+}
+
 #vision h1{
   margin-bottom: 5%;
   border-style: solid;
