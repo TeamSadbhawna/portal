@@ -12,6 +12,10 @@ We make a heartful request for everyone to please come forward and contribute he
 
 #### Note - Please consult a doctor before using any shared resource(s). Team Sadbhawna won't take any responsibilty as the portal is open for all.
 
+### Our Team
+| [Salokya Kumar](https://github.com/ksalokya)        | [Tisha Soumya](https://github.com/Tishasoumya-02) | [Sayan Bhattacharyya](https://github.com/Sayan3990) |
+| ----------- | ----------- | ----------- |
+
 ## Thanks to all the contributors ❤️
 <a href = "https://github.com/TeamSadbhawna/portal/graphs/contributors">
   <img src = "https://contrib.rocks/image?repo=TeamSadbhawna/portal"/>
