@@ -2,41 +2,61 @@
     <div class="container-fluid px-1 py-5 mx-auto">
         <div class="row d-flex justify-content-center">
             <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
-                <h3 class="webportal"><img class="logo" src="assets/images/logo.png" alt="SadbhawnaLogo"  width="50" height="60">     Sadbhawna</h3>
+                <h3 class="webportal"><img class="logo" src="/assets/images/logo.png" alt="SadbhawnaLogo" width="50"
+                        height="60"> Sadbhawna</h3>
                 <p class="blue-text">Action speaks louder than words</p>
                 <div class="card">
                     <h5 class="text-center mb-4"></h5>
 
-                    <form class="form-card" method="post" action="/signup">
+                    <form class="form-card" method="post" action="/auth/signup">
                         <div class="row justify-content-between text-left">
-                            <div class="form-group col flex-column d-flex"> <label class="form-control-label px-3">Full Name<span class="text-danger"> *</span></label>
-                             <input type="text" id="fullname" name="fullname" placeholder="Enter your Name" onblur="validate(1)"> </div>
+                            <div class="form-group col flex-column d-flex"> <label class="form-control-label px-3">Full
+                                    Name<span class="text-danger"> *</span></label>
+                                <input type="text" id="fullname" name="fullname" placeholder="Enter your Name"
+                                    onchange="validateSignUp(1)">
+                            </div>
 
                         </div>
                         <div class="row justify-content-between text-left">
-                          <div class="form-group col flex-column d-flex"> <label class="form-control-label px-3">Phone No.<span class="text-danger"> *</span></label>
-                           <input type="number" id="number" name="phoneno" placeholder="10 digit mobile number" onblur="validate(2)"> </div>
+                            <div class="form-group col flex-column d-flex"> <label class="form-control-label px-3">Phone
+                                    No.<span class="text-danger"> *</span></label>
+                                <input type="number" id="number" name="phoneno" placeholder="10 digit mobile number"
+                                    onchange="validateSignUp(2)">
+                            </div>
 
-                      </div>
-                      <div class="row justify-content-between text-left">
-                        <div class="form-group col flex-column d-flex"> <label class="form-control-label px-3">Email<span class="text-danger"> *</span></label>
-                         <input type="email" id="email" name="email" placeholder="Enter your email" onblur="validate(3)"> </div>
-
-                    </div>
-                        <div class="row justify-content-between text-left">
-                            <div class="form-group col-12 flex-column d-flex"> <label class="form-control-label px-3">Password<span class="text-danger"> *</span></label>
-                                <input type="password" id="password" name="password" placeholder="Password must contain at least 8 characters or digits" onblur="validate(4)"> </div>
                         </div>
                         <div class="row justify-content-between text-left">
-                          <div class="form-group col-12 flex-column d-flex"> <label class="form-control-label px-3">Confirm Password<span class="text-danger"> *</span></label>
-                              <input type="password" id="cnfpassword" name="cnfpassword" placeholder="Confirm Password" onblur="validate(5)"> </div>
-                      </div>
+                            <div class="form-group col flex-column d-flex"> <label
+                                    class="form-control-label px-3">Email<span class="text-danger"> *</span></label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email"
+                                    onchange="validateSignUp(3)">
+                            </div>
+
+                        </div>
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-12 flex-column d-flex"> <label
+                                    class="form-control-label px-3">Password<span class="text-danger"> *</span></label>
+                                <input type="password" id="password" name="password"
+                                    placeholder="Password must contain at least 8 characters or digits"
+                                    onchange="validateSignUp(4)">
+                            </div>
+                        </div>
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-12 flex-column d-flex"> <label
+                                    class="form-control-label px-3">Confirm Password<span class="text-danger">
+                                        *</span></label>
+                                <input type="password" id="cnfpassword" name="cnfpassword"
+                                    placeholder="Confirm Password" onchange="validateSignUp(5)">
+                            </div>
+                        </div>
                         <div class="row justify-content-center">
-                            <div class="form-group col-md-3"> <button type="submit" class="btn btn-dark">Register</button> </div>
+                            <div class="form-group col-md-3"> <button type="submit"
+                                    class="btn btn-dark">Register</button> </div>
                         </div>
                         <div class="row justify-content-center">
-                          <div class="form-group col-md-4"><button type="reset" class="btn btn-dark">Reset</button> </div>
-                      </div>
+                            <div class="form-group col-md-4"><button type="reset" class="btn btn-dark">Reset</button>
+                            </div>
+                        </div>
                     </form>
 
                 </div>
