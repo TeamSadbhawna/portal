@@ -12,6 +12,9 @@ We make a heartful request for everyone to please come forward and contribute he
 
 #### Note - Please consult a doctor before using any shared resource(s). Team Sadbhawna won't take any responsibilty as the portal is open for all.
 
+## The Architecture 
+![mvc](https://github.com/TeamSadbhawna/portal/assets/72447529/a3d64ada-1957-424d-848e-0d756a8dce0b)
+
 ### Our Team
 | [Salokya Kumar](https://github.com/ksalokya)        | [Tisha Soumya](https://github.com/Tishasoumya-02) | [Sayan Bhattacharyya](https://github.com/Sayan3990) |
 | ----------- | ----------- | ----------- |
