@@ -1,5 +1,5 @@
 {
-  "name": "redesigned",
+  "name": "portal",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/TeamSadbhawna/redesigned.git"
   },
-  "author": "",
+  "author": "Team Sadbhawna",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/TeamSadbhawna/redesigned/issues"
@@ -19,16 +19,16 @@
   "homepage": "https://github.com/TeamSadbhawna/redesigned#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.2",
     "dotenv": "^10.0.0",
     "ejs": "^3.1.7",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "fs": "0.0.1-security",
-    "mongoose": "^5.12.12",
+    "mongoose": "^5.13.17",
     "multer": "^1.4.2",
     "path": "^0.12.7"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.22"
   }
 }

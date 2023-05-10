@@ -1,122 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forgot-Password</title>
-    <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico">
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/bundle.css">
-    <link rel="stylesheet" href="assets/css/signup-in-style.css">
-    <!-- CDN bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    <!-- Font-Style -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
-     <link rel="preconnect" href="https://fonts.gstatic.com">
-     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-     <!-- Font-Awesome CDN -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
-</head>
-<body style="background-color: #dfe5f5;">
-    <div class="container-fluid px-1 py-5 mx-auto">
-        <div class="row d-flex justify-content-center">
-            <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
-                <h3 class="webportal"><img class="logo" src="assets/images/logo.png" alt="SadbhawnaLogo"  width="50" height="60">     Sadbhawna</h3>
-                <p class="blue-text">Action speaks louder than words</p>
-                <div class="card">
-                    <h5 class="text-center mb-4"></h5>
-                    <form class="form-card" onsubmit="event.preventDefault()">
-                        <div class="row justify-content-between text-left">
-                            <div class="form-group col flex-column d-flex"> <label class="form-control-label px-3">Email<span class="text-danger"> *</span></label>
-                             <input type="email" id="email" name="email" placeholder="Enter your Email" > </div>
-                           
-                        </div>
-                       
-                      
-                        <div class="row justify-content-center">
-                            <div class="form-group col-md-4"> <a type="submit" class="btn btn-primary" href="#">Reset Password</a> </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="form-group col-md-4"> <a type="submit" class="btn btn-primary" href="login">Back to Sign In page</a> </div>
-                        </div>
-                    </form>
-                </div>
+<%- include('partials/header'); -%>
+  <div class="container-fluid px-1 py-5 mx-auto">
+    <div class="row d-flex justify-content-center">
+      <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+        <h3 class="webportal"><img class="logo" src="/assets/images/logo.png" alt="SadbhawnaLogo" width="50"
+            height="60"> Sadbhawna</h3>
+        <p class="blue-text">Action speaks louder than words</p>
+        <div class="card">
+          <h5 class="text-center mb-4"></h5>
+          <form class="form-card" onsubmit="event.preventDefault()">
+            <div class="row justify-content-between text-left">
+              <div class="form-group col flex-column d-flex">
+                <label class="form-control-label px-3">Email<span class="text-danger"> *</span></label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+              </div>
             </div>
+            <div class="row justify-content-center">
+              <div class="form-group col-md-4"> <a type="submit" class="btn btn-primary" href="#">Reset Password</a>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="form-group col-md-4">
+                <a type="submit" class="btn btn-primary" href="/auth/login">Back to Sign In page </a>
+              </div>
+            </div>
+          </form>
         </div>
+      </div>
     </div>
-    <footer id="about1" class="nk-footer bg-dark tc-light has-overlay">
-      <div class="overlay shape shape-c"></div>
-      <section class="section section-footer section-m tc-light">
-        <div class="container">
-          <div class="nk-footer-top">
-            <div class="row g-gs gy-m">
-              <div class="col-lg-3 col-md-9 mr-auto">
-                <div class="wgs wgs-about">
-                  <div class="wgs-about-text">
-                    <p><strong>Sadbhawna</strong> is a web portal where recovered COVID-19 patient can share their left out resources such as medicines, relief creams, supplements etc.</p>
-                    <br>
-                    <p>This website may contains bugs.Patches are on it's way to improve overall UI/UX experince. All suggestions are Welcomed and Appreciated!</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4 col-lg-2">
-                <div class="wgs wgs-menu">
-                  <h6 class="wgs-title">Quick Links</h6>
-                  <ul class="wgs-links">
-                    <li><a class="scrollto" href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">Symptoms</a></li>
-                    <li><a class="scrollto" href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public">Prevention</a></li>
-                    <li><a class="scrollto" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">Protect Youself</a></li>
-                    <li><a class="scrollto" href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html">FAQs</a></li>
-                    <li><a class="scrollto" href="https://en.wikipedia.org/wiki/COVID-19_pandemic">About Corona</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-sm-4 col-lg-3">
-                <div class="wgs wgs-menu">
-                  <h6 class="wgs-title">Helpfull Links</h6>
-                  <ul class="wgs-links">
-                    <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/index.html">Healthcare Professionals</a></li>
-                    <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/older-adults.html">Older Adults & Medical Conditions</a></li>
-                    <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/checklist-household-ready.html">Household Checklist</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-sm-4 col-lg-2">
-                <div class="wgs wgs-menu">
-                  <h6 class="wgs-title">Important Links</h6>
-                  <ul class="wgs-links">
-                    <li><a href="https://www.mohfw.gov.in/">MoHFW | GOI</a></li>
-                    <li><a href="https://www.covid19india.org/">Track COVID-19</a></li>
-                    <li><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">WHO Website</a></li>
-                    <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">CDC Website</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="nk-footer-bottom">
-            <div class="row align-items-center">
-              <div class="col-md-6">
-                <p class="nk-copyright">&copy; 2021 Team Sadbhawna</p>
-                <p class="nk-copyright">REMEMBER - We always advice you to consult doctor first.*</p>
-              </div>
-              <div class="col-md-6">
-                <ul class="nk-footer-links justify-content-md-end">
-                  <li>
-                    <p class="nk-copyright">Made with ❤️ by Team Sadbhawna</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </footer>
-</body>
-
-</html>
+  </div>
+<%- include('partials/footer'); -%>
