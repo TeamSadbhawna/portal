@@ -24,5 +24,4 @@ We make a heartful request for everyone to please come forward and contribute he
   <img src = "https://contrib.rocks/image?repo=TeamSadbhawna/portal"/>
 </a>
 
-
 #### Leave a star behind if this repo helped you in any way. 😄
